@@ -127,13 +127,20 @@
   font-size: 50px;
 }
 
+.style-six {
+  border: none;
+  background: url(../img/hr.PNG) no-repeat scroll center;
+  height: 80px;
+  margin: 3rem 0;
+}
+
 /*-----------------------*/
 .container h3 {
   color: #1a2c5b;
   font-size: 50px;
   text-align: center;
   font-family: "Manila Kiss";
-  padding-bottom: 1em;
+  padding: 2em 0;
 }
 
 .about {
