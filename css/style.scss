@@ -1,0 +1,29 @@
+@import 'star';
+@import 'colors';
+@import 'font';
+@import 'nav';
+@import 'banner';
+@import 'BContainer';
+@import 'verticaltitle';
+@import 'about';
+@import 'form';
+@import 'footer'; 
+
+body{
+    background-color: $white_eyes;
+}
+
+/*------------------*/
+.d-flex {
+    display: flex;
+}
+
+/*Concat*/
+
+.phrase {
+    text-align: center;
+    font-family: Calibri;
+    color: $purple;
+    font-size: 1.7rem;
+    padding: 5em 4em;
+}

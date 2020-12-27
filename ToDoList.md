@@ -7,13 +7,14 @@ Globale:
   ok  - Crée la structure html
   ok  - Incérer les div au bon endroi
   ok  - Metre les liens en relation
+     - crée un loading
 
 -------------------------CSS--------------------------
   ok  - Mettre en forme la strucutre de base
   ok  - Mettre en formes les textes
   ok  - Grouper le  code css en scss avec des variables
   ok  - Insérer les polices
-     - Répartir le formulaire
+  ok  - Répartir le formulaire
      - Média query
 
 -------------------------JS----------------------------

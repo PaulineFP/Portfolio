@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Manila Kiss";
+  src: url("../font/Manila Kiss.otf");
+}
+
+@font-face {
+  font-family: "Petrichor Sublimey";
+  src: url("../font/Petrichor Sublimey.otf");
+}
+
+.nav {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+}
+
+.nav a {
+  color: #f8fcff;
+  text-decoration: none;
+  font-family: calibri;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.banniere {
+  width: 100vw;
+  min-height: 100vh;
+  margin-bottom: 1rem;
+  top: 0;
+  left: 0;
+  background: no-repeat center/100% url("../img/PortfolioPauline.png");
+  text-align: center;
+}
+
+.banniere h1 {
+  color: #f8fcff;
+  margin-top: 21%;
+  font-size: 80px;
+  font-family: "Manila Kiss";
+}
+
+.container {
+  margin: 5em 5em;
+  right: 3em;
+  left: 3em;
+  bottom: 0;
+  background: #f8fcff;
+  top: 110%;
+}
+
+.container h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1a2c5b;
+  text-align: center;
+  font-family: "Petrichor Sublimey";
+  font-size: 50px;
+  padding: 5em 0 3em 0;
+}
+
+/*----------------------------*/
+.gauche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 7em 0;
+}
+
+.rectangleG {
+  background-color: #b8dff0;
+  width: 30px;
+  min-height: 60px;
+}
+
+.rectangleG h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-family: "Petrichor Sublimey";
+  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 3em 0;
+  margin-left: 1em;
+  color: #1a2c5b;
+  font-size: 50px;
+}
+
+/*right side*/
+.droite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 7em 0;
+}
+
+.rectangleD {
+  background-color: #b8dff0;
+  width: 30px;
+  min-height: 60px;
+}
+
+.rectangleD h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-family: "Petrichor Sublimey";
+  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 3em 0;
+  margin-left: 1em;
+  color: #1a2c5b;
+  font-size: 50px;
+}
+
+/*-----------------------*/
+.container h3 {
+  color: #1a2c5b;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Manila Kiss";
+  padding-bottom: 1em;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  padding-bottom: 10em;
+}
+
+.about img {
+  -webkit-box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  width: 65vw;
+  border-radius: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about p {
+  color: #f8fcff;
+  font-size: 20px;
+  font-family: Calibri;
+  position: absolute;
+  text-align: justify;
+  margin-top: 1em;
+  padding-right: 15%;
+}
+
+/*---------------------------*/
+.containerC {
+  width: 60%;
+  height: 600px;
+  margin-top: 30%;
+  margin-left: 50%;
+  -webkit-box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  border: solid 2px #1a2c5b;
+}
+
+/*-----------*/
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding: 2em;
+}
+
+.form h3 {
+  color: #1a2c5b;
+  font-size: 50px;
+  text-align: center;
+}
+
+.form input {
+  width: calc(100% - 20px);
+  font-size: 1.2em;
+  font-family: Calibri;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #7971ea;
+  background-color: #f8fcff;
+}
+
+.form textarea {
+  width: calc(100% - 20px);
+  height: 100px;
+  font-size: 1.2em;
+  font-family: Calibri;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #7971ea;
+  background-color: #f8fcff;
+}
+
+.form button {
+  padding: 5px 20px;
+  width: 50%;
+  margin-left: 5em;
+  margin-left: 5em;
+  border-radius: 20px;
+  border: none;
+  font-family: Calibri;
+  font-size: 1.2em;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #1a2c5b), to(#7971ea));
+  background: linear-gradient(90deg, #020024 0%, #1a2c5b 35%, #7971ea 100%);
+  color: white;
+}
+
+.form button:hover {
+  opacity: .7;
+}
+
+::-webkit-input-placeholder {
+  color: #7971ea;
+}
+
+:-ms-input-placeholder {
+  color: #7971ea;
+}
+
+::-ms-input-placeholder {
+  color: #7971ea;
+}
+
+::placeholder {
+  color: #7971ea;
+}
+
+/*-------info------*/
+.formP {
+  color: #f8fcff;
+  font-size: 20px;
+  font-family: Calibri;
+  background: url("../img/contact.jpg") no-repeat;
+  width: 50%;
+  padding: 2em;
+  text-align: center;
+}
+
+.formP h4 {
+  padding-top: 2em;
+  font-size: 1.5em;
+}
+
+.formP a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formP a img {
+  width: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1em;
+}
+
+.footer {
+  height: 40px;
+  margin-top: 50px;
+  padding-top: 1rem;
+  text-align: center;
+  font-family: calibris;
+  background-color: #1a2c5b;
+  color: #f8fcff;
+}
+
+body {
+  background-color: #f8fcff;
+}
+
+/*------------------*/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*Concat*/
+.phrase {
+  text-align: center;
+  font-family: Calibri;
+  color: #7971ea;
+  font-size: 1.7rem;
+  padding: 5em 4em;
+}
+/*# sourceMappingURL=style.css.map */

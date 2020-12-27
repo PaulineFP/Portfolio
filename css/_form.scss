@@ -1,0 +1,110 @@
+@mixin container {
+    width: 60%;
+    height: 600px;
+    margin-top: 30%;
+    margin-left: 50%;
+}
+@mixin box_shadow {
+    box-shadow:  -10px 5px 5px rgba(0, 0, 0, .5);
+}
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+}
+@mixin h3 {
+    color: $dark_blue;
+    font-size: 50px;
+}
+@mixin p {
+    color: $white_eyes;
+    font-size:20px;
+    font-family: Calibri;
+}
+/*---------------------------*/
+.containerC {
+
+    @include container();
+    @include box_shadow();
+    display: flex;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    overflow: hidden;
+    border: solid 2px $dark_blue;
+}
+/*-----------*/
+
+.form {
+@include flex_center();
+width: 50%;
+padding: 2em;
+    h3 {
+        @include h3();
+        text-align: center;
+    }
+
+    input {
+        width: calc(100% - 20px);
+        font-size: 1.2em;
+        font-family: Calibri;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $purple;
+        background-color: $white_eyes
+    }
+
+    textarea {
+        width: calc(100% - 20px);
+        height: 100px;
+        font-size: 1.2em;
+        font-family: Calibri;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $purple;
+        background-color: $white_eyes
+    }
+
+    button {
+        padding: 5px 20px;
+        width: 50%;
+        margin-left: 5em;
+        margin-left: 5em;
+        border-radius: 20px;
+        border: none;
+        font-family: Calibri;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition:  all .4s;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,44,91,1) 35%, rgba(121,113,234,1) 100%);
+        color: white;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+::placeholder {
+    color: $purple;
+}
+
+/*-------info------*/
+
+.formP { 
+@include p();
+background: url("../img/contact.jpg") no-repeat;
+width: 50%;
+padding: 2em;   
+text-align: center;
+    h4 {
+        padding-top: 2em;
+        font-size: 1.5em;
+    }
+    a {
+        @include flex_center();
+        img {
+        width: 50px!important;
+        display: flex;
+        padding-bottom: 1em;
+        }
+    }
+}

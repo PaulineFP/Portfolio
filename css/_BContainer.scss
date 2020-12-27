@@ -1,0 +1,17 @@
+.container {
+    margin: 5em 5em ;
+    right: 3em;
+    left: 3em;
+    bottom: 0;
+    background: $white_eyes;
+    top: 110%;
+    h2 {
+        display: flex;
+        justify-content: center;
+        color: $dark_blue;
+        text-align: center;
+        font-family: "Petrichor Sublimey";
+        font-size: 50px;
+        padding: 5em 0 3em 0;
+    }
+}

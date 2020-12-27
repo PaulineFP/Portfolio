@@ -1,0 +1,15 @@
+.banniere {
+    width:100vw;
+    min-height: 100vh;
+    margin-bottom: 1rem;
+    top:0;
+    left: 0;
+    background: no-repeat center/100% url("../img/PortfolioPauline.png");
+    text-align: center;
+        h1 {
+            color: $white_eyes;
+            margin-top: 21%;
+            font-size: 80px;
+            font-family: "Manila Kiss";
+        }
+}
