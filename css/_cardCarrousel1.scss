@@ -1,0 +1,40 @@
+.competances{
+  display: flex;
+padding-bottom: 3em;
+}
+.cardContainer{
+ margin-left: 20%;
+ margin-top: 3rem;
+ display: flex;
+ justify-content: center;
+}
+
+.card {
+display: flex;
+justify-content: flex-end;
+height: 280px;
+width: 200px;
+border-radius: 10px;
+box-shadow: -2rem 0 1rem rgba(0, 0, 0, 0.575);
+transition: 0.4s ease-out;
+position: relative;
+left: 0px;
+
+  &:not(:first-child) {
+      margin-left: -80px;
+  }
+  &:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  }
+  &:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+  }
+ img{
+  min-width: 200px;
+  border-radius: 10px;
+ }
+
+}

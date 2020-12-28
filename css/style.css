@@ -47,12 +47,9 @@
 }
 
 .container {
-  margin: 5em 5em;
-  right: 3em;
-  left: 3em;
-  bottom: 0;
+  margin: auto auto;
+  width: 1350px;
   background: #f8fcff;
-  top: 110%;
 }
 
 .container h2 {
@@ -66,7 +63,7 @@
   text-align: center;
   font-family: "Petrichor Sublimey";
   font-size: 50px;
-  padding: 5em 0 3em 0;
+  padding: 7em 0;
 }
 
 /*----------------------------*/
@@ -77,25 +74,19 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 7em 0;
 }
 
-.rectangleG {
+.gauche h3 {
   background-color: #b8dff0;
   width: 30px;
-  min-height: 60px;
-}
-
-.rectangleG h3 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-family: "Petrichor Sublimey";
-  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
-  padding: 3em 0;
-  margin-left: 1em;
+  height: 300px;
   color: #1a2c5b;
   font-size: 50px;
+  font-family: "Petrichor Sublimey";
+  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
 }
 
 /*right side*/
@@ -106,25 +97,78 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 7em 0;
 }
 
-.rectangleD {
+.droite h3 {
   background-color: #b8dff0;
   width: 30px;
-  min-height: 60px;
-}
-
-.rectangleD h3 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-family: "Petrichor Sublimey";
-  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
-  padding: 3em 0;
-  margin-left: 1em;
+  height: 300px;
   color: #1a2c5b;
   font-size: 50px;
+  font-family: "Petrichor Sublimey";
+  text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.competances {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.cardContainer {
+  margin-left: 20%;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 280px;
+  width: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: -2rem 0 1rem rgba(0, 0, 0, 0.575);
+          box-shadow: -2rem 0 1rem rgba(0, 0, 0, 0.575);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -80px;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.card img {
+  min-width: 200px;
+  border-radius: 10px;
 }
 
 .style-six {
