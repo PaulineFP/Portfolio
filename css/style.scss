@@ -5,14 +5,16 @@
 @import 'banner';
 @import 'BContainer';
 @import 'verticaltitle';
-@import 'cardCarrousel1';
+@import 'cardhover1';
 @import 'hr';
+@import 'carousel';
 @import 'about';
 @import 'form';
 @import 'footer'; 
 
 body{
     background-color: $white_eyes;
+    overflow-x: hidden;
 }
 
 /*------------------*/
