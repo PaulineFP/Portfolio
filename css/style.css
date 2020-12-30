@@ -30,20 +30,86 @@
 }
 
 .banniere {
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   margin-bottom: 1rem;
-  top: 0;
-  left: 0;
   background: no-repeat center/100% url("../img/PortfolioPauline.png");
-  text-align: center;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banniere h1 {
+  position: relative;
   color: #f8fcff;
-  margin-top: 21%;
   font-size: 80px;
   font-family: "Manila Kiss";
+  padding-bottom: 20%;
+}
+
+.banniere .nuages {
+  padding-top: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.banniere .nuages img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  -webkit-animation: could calc(3s * var(--i)) linear infinite;
+          animation: could calc(3s * var(--i)) linear infinite;
+}
+
+@-webkit-keyframes could {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+@keyframes could {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
 }
 
 .container {
@@ -431,13 +497,6 @@
 body {
   background-color: #f8fcff;
   overflow-x: hidden;
-}
-
-/*------------------*/
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /*Concat*/
