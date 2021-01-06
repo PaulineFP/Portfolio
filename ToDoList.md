@@ -3,7 +3,7 @@ Globale:
               - Mettre sur le serveur ACS
               - Publier
               - SEO
-              - Amélioration / prise en compte remarques
+          ok  - Amélioration / prise en compte remarques
 
 -------------------------HTML------------------------
   ok  - Crée la structure html
