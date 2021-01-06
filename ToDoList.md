@@ -2,6 +2,8 @@ Globale:
           ok  - Crée une maquette
               - Mettre sur le serveur ACS
               - Publier
+              - SEO
+              - Amélioration / prise en compte remarques
 
 -------------------------HTML------------------------
   ok  - Crée la structure html
@@ -15,13 +17,10 @@ Globale:
   ok  - Grouper le  code css en scss avec des variables
   ok  - Insérer les polices
   ok  - Répartir le formulaire
-     - Média query
-
--------------------------JS----------------------------
-    - Animation nuage
-    - Animation compétances
-    - Animation projets
-    - Animation formulaire
+  ok  - Média query
+  ok  - Animation nuage
+  ok  - Animation compétances
+  ok  - Animation projets
   ok  - trouver une animation pour le scroll
 
 ------------------------PHP----------------------------
