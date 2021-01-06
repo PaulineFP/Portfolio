@@ -1,12 +1,8 @@
-.contenaireP {
-    display: flex;
- padding-bottom: 2rem;
-}
 .projets {
     display: flex;
     justify-content: center;
-    margin-right: 20vw;
-    padding: 10vh 20vw 0 30vw;
+    padding-bottom: 25%;
+    padding-top: 4em;
     
 }
 
@@ -16,6 +12,7 @@ width: 200px;
 height: 200px;
 transform-style: preserve-3d;
 animation: animate 20s linear infinite;
+
     span {
         position: absolute;
         top: 0;
@@ -31,6 +28,7 @@ animation: animate 20s linear infinite;
             left:0;
             width: 100%;
             object-fit:cover;
+            border-radius: 10px;
         }
     }
 }
@@ -42,4 +40,8 @@ animation: animate 20s linear infinite;
     100% {
         transform: perspective(1000px) rotateY(360deg);
     }
+}
+
+.mobileContenaire {
+    display: none;
 }

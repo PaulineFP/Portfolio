@@ -1,17 +1,16 @@
-.competances {
+.competences {
   display: flex;
-padding-bottom: 3em;
+  justify-content: center;
+  padding-bottom: 3em;
 }
 .cardContainer {
- margin-left: 10vw;
  margin-top: 5rem;
  display: flex;
- justify-content: center;
 }
 
 .card {
 display: flex;
-justify-content: flex-end;
+justify-content: center;
 height: 280px;
 width: 200px;
 border-radius: 10px;
@@ -29,7 +28,7 @@ left: 0px;
   }
   &:hover ~ .card {
   position: relative;
-  left: 50px;
+  left: 80px;
   transition: 0.4s ease-out;
   }
  img {
