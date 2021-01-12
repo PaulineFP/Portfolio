@@ -85,6 +85,10 @@
         span {
             width: 100%;
             transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+            img{
+                width: 20vw;
+                height: 15 vh;
+            }
         }
     }
 
