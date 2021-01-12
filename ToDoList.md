@@ -1,7 +1,7 @@
 Globale:
           ok  - Crée une maquette
-              - Mettre sur le serveur ACS
-              - Publier
+          ok  - Mettre sur le serveur ACS
+          ok  - Publier
               - SEO
           ok  - Amélioration / prise en compte remarques
 
@@ -9,7 +9,7 @@ Globale:
   ok  - Crée la structure html
   ok  - Incérer les div au bon endroi
   ok  - Metre les liens en relation
-     - crée un loading
+      - crée un loading
 
 -------------------------CSS--------------------------
   ok  - Mettre en forme la strucutre de base
@@ -22,8 +22,8 @@ Globale:
   ok  - Animation compétances
   ok  - Animation projets
   ok  - trouver une animation pour le scroll
-
+      - crée un menu burgeur
+      - création fenaitre porjets
 ------------------------PHP----------------------------
 
-      - lier le fromulaire a la boite mail
-      - slug
+  ok  - lier le fromulaire a la boite mail
