@@ -197,66 +197,64 @@
 
 
 
-    /*.menu-btn {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 13px;
-        height: 13px;
-        top: 1em;
-        left: 1em;
-        padding: 1em;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        border: 1.5px solid #fff;
-        border-radius: 5px;
-
-        .menu-btn_burger {
-            width: 15px;
-            height: 3px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-            transition: all .5s ease-in-out;
-
-            &::before,
-            &::after {
-                content: '';
-                position: absolute;
-                width: 15px;
-                height: 3px;
-                background: #fff;
-                border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-                transition: all .5s ease-in-out;
-            }
-
-            &::before {
-                transform: translateY(-16px);
-            }
-
-            &::after {
-                transform: translateY(16px);
-            }
-        }
-    }
-
-    //animation
-    .menu-btn.open .menu-btn_burger {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
-
-        &::before {
-            transform: rotate(45deg) translate(35px, -35px);
-        }
-
-        &::after {
-            transform: rotate(-45deg) translate(35px, 35px);
-        }
-    }
-*/
+//.menu-btn {
+//        position: absolute;
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        width: 13px;
+//        height: 13px;
+//        top: 1em;
+//        left: 1em;
+//        padding: 1em;
+//        cursor: pointer;
+//        transition: all .5s ease-in-out;
+//        border: 1.5px solid #fff;
+//        border-radius: 5px;
+//
+//        .menu-btn_burger {
+//            width: 15px;
+//            height: 3px;
+//            border-radius: 5px;
+//            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+//            transition: all .5s ease-in-out;
+//
+//            &::before,
+//            &::after {
+//                content: '';
+//                position: absolute;
+//                width: 15px;
+//                height: 3px;
+//                background: #fff;
+//                border-radius: 5px;
+//                box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+//                transition: all .5s ease-in-out;
+//            }
+//
+//            &::before {
+//                transform: translateY(-16px);
+//            }
+//
+//            &::after {
+//                transform: translateY(16px);
+//            }
+//        }
+//    }
+//
+//    //animation
+//    .menu-btn.open .menu-btn_burger {
+//        transform: translateX(-50px);
+//        background: transparent;
+//        box-shadow: none;
+//
+//        &::before {
+//            transform: rotate(45deg) translate(35px, -35px);
+//        }
+//
+//        &::after {
+//            transform: rotate(-45deg) translate(35px, 35px);
+//        }
+//    }
 
 
 
