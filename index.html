@@ -10,15 +10,25 @@
 
 <body>
     <div>
-        <div class="topbar">
-            <nav>
-                <a href="#accueil" title="accueil">Accueil</a>
-                <a href="#competences">Compétences</a>
-                <a href="#projets">Projets réalisés</a>
-                <a href="#aPropos">A Propos</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        
+        <div id="d1">
+            <div class="topbar"  id="topbar">
+                <nav>
+                    <a href="#accueil" title="accueil">Accueil</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets">Projets réalisés</a>
+                    <a href="#aPropos">A Propos</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </div>
+        <!--Menu Burger-->
+        <div class="menuB" id="Burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
     </div>
     <!-----------Bannière---------->
 
@@ -57,9 +67,9 @@
                 <div class="card">
                     <img src="./img/cardphp.png">
                 </div>
-                <!-- <div class="card">
+                <div class="card">
                     <img src="./img/cardjs.png">
-                </div>-->
+                </div>
                 <div class="card">
                     <img src="./img/cardsass.png">
                 </div>
@@ -125,12 +135,12 @@
                     <img src="./img/Blog-tel.png">
                 </div>
                 <p>Le site blog téléphone est mon premier projet en binome.</br>
-                </br>
+                    </br>
                     Ce projet est un exercice de génération d'articles dinamiques via la base de donnée.</br>
                     </br>
                     Il est réalisé a l'aide de bootstrap et photoshop.</br>
-                </br>
-                <i>Date de réalisation: 09/11/2020</i>
+                    </br>
+                    <i>Date de réalisation: 09/11/2020</i>
                 </p>
             </div>
         </div>
@@ -163,6 +173,7 @@
         <!---------------A Propos-------------->
         <h3 id="aPropos">( A Propos) :</h3>
         <div class="about">
+            <div class="aboutC">
             <img src="img/AProposPauline.png">
 
             <p>Mon parcours professionnel est pour le moins<br>
@@ -187,7 +198,7 @@
                 <br>
                 C’est pour cette raison que j’ai intégré la formation<br>
                 Access Code School de Vesoul en octobre 2020.</p>
-
+            </div>
         </div>
 
         <hr class="style-six">
@@ -236,11 +247,13 @@
             </div>
         </div>
     </div>
+
     <!-----------------Footer----------------------------------------------->
     <footer class="footer">
         <p>&copy 2020 - Pauline Frare-Pradal</p>
     </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

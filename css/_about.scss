@@ -1,7 +1,7 @@
 
-@mixin flex_end {
+@mixin flex_center {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 @mixin box_shadow {
@@ -16,9 +16,12 @@
 /*-----------------------*/
 
 .about {
-@include flex_end();
+@include flex_center();
 position: relative;
 padding-bottom: 5em;
+.aboutC{
+    display: flex;
+    flex-direction: row-reverse;
     img {
         @include box_shadow();
         width: 65vw;
@@ -26,12 +29,12 @@ padding-bottom: 5em;
         margin-right: auto;
         margin-left: auto;
     }
-
      p {
         @include p();
         position: absolute;
         text-align: justify;
-        margin-top: 1em;
-        padding-right: 15%;
+        margin-top: 2em;
+        padding-right: 3em;
     }
+}
 }

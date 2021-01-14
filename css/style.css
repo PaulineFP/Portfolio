@@ -453,14 +453,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   padding-bottom: 5em;
 }
 
-.about img {
+.about .aboutC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.about .aboutC img {
   -webkit-box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
   width: 65vw;
@@ -469,14 +479,14 @@
   margin-left: auto;
 }
 
-.about p {
+.about .aboutC p {
   color: #f7fffff5;
   font-size: 20px;
   font-family: Calibri;
   position: absolute;
   text-align: justify;
-  margin-top: 1em;
-  padding-right: 15%;
+  margin-top: 2em;
+  padding-right: 3em;
 }
 
 /*---------------------------*/
@@ -632,6 +642,10 @@ body {
   padding: 2em 4em;
 }
 
+.menu-btn {
+  display: none;
+}
+
 @media screen and (max-width: 780px) {
   .topbar {
     left: 15px;
@@ -709,11 +723,11 @@ body {
   .about {
     padding-bottom: 1em;
   }
-  .about p {
+  .about .aboutC p {
     font-size: 12px;
     padding-right: 7%;
   }
-  .about img {
+  .about .aboutC img {
     width: 90%;
   }
   .style-six {
@@ -756,15 +770,98 @@ body {
   :root {
     --mobile-width: 100vw;
     --mobile-height: 16vh;
-    --mobile-element-displayed:3
+    --mobile-element-displayed: 3
     ;
   }
-  .topbar {
-    left: 25px;
+  #d1 {
+    display: none;
   }
-  .topbar a {
-    font-size: 10px;
+  .menuB {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 1em;
+    left: 1em;
   }
+  .bar1, .bar2, .bar3 {
+    width: 15px;
+    height: 3px;
+    background-color: #b8dff0;
+    margin: 3px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 3px);
+    transform: rotate(-45deg) translate(-6px, 3px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -3px);
+    transform: rotate(45deg) translate(-5px, -3px);
+  }
+  /*.menu-btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13px;
+        height: 13px;
+        top: 1em;
+        left: 1em;
+        padding: 1em;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border: 1.5px solid #fff;
+        border-radius: 5px;
+
+        .menu-btn_burger {
+            width: 15px;
+            height: 3px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 3px;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+                transition: all .5s ease-in-out;
+            }
+
+            &::before {
+                transform: translateY(-16px);
+            }
+
+            &::after {
+                transform: translateY(16px);
+            }
+        }
+    }
+
+    //animation
+    .menu-btn.open .menu-btn_burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+
+        &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+        }
+    }
+*/
   .banniere h1 {
     font-size: 30px;
   }
@@ -875,12 +972,12 @@ body {
     -webkit-box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
             box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
   }
-  .about p {
+  .about .aboutC p {
     font-size: 9px;
     padding-top: 1em;
     position: relative;
   }
-  .about img {
+  .about .aboutC img {
     display: none;
   }
   .phrase {
@@ -922,7 +1019,7 @@ body {
     padding: 5px 0px;
     margin-left: 3em;
   }
-  .footer {
+  .containerC .footer {
     margin-top: 0;
     height: 20px;
     font-size: 7px;
