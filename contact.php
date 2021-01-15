@@ -25,8 +25,31 @@ $email_subject = "Contact: $name";
 $email_body = "Vous avez reçu un nouveau message depuis le formulaire de contact de votre portfolio.\n\n"."Voici les détails:\n\nName: $name\n\nEmail:$email_add\n\nObjet:$object\n\nMessage:$message";
 $headers = "From: noreply-p.frare@codeur.online\n";
 $headers = "Répondre à : $email_add";
-mail($to,$email_subject,$email_body,$headers);
-echo 'Message à bien été envoyé! Vous allez être redirigé vers mon Portfolio.';
+/*mail($to,$email_subject,$email_body,$headers);
+echo 'Message à bien été envoyé! Vous allez être redirigé vers mon Portfolio.';*/
 header('refresh: 3; url=index.html');
 return true
 ?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauline FRRARE-PRADAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="message">
+        <div class="messageB">
+            <?php mail($to,$email_subject,$email_body,$headers);
+            echo 'Message à bien été envoyé! Vous allez être redirigé vers mon Portfolio.'; ?>
+        </div>
+     <footer class="footer">
+        <p>&copy 2020 - Pauline Frare-Pradal</p>
+    </footer>
+    </div>
+</body>
+<html>

@@ -1,0 +1,36 @@
+@import 'star';
+@import 'colors';
+@import 'font';
+@import 'footer';
+
+*{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    background-color: $white_eyes;
+    .messageB{
+        margin-top: 15%;
+        width: 80%;
+        height: 30%;
+        background-color:  #f0f6ed;
+        border-radius: 8px;
+        box-shadow:  -10px 5px 5px rgba(0, 0, 0, .5);
+        p{
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            font-family: calibri; 
+            color: $purple; 
+            padding-top: 5em;
+        }
+    }
+}
+
+.footer{
+    margin-top: 0;
+}
