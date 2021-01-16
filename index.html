@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pauline FRRARE-PRADAL</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -219,18 +220,26 @@
                     </div>
 
                     <div class="form">
-                        <form action="contact.php" method="POST">
+                        <form name="myForm" action="contact.php" method="POST" onsubmit="return validateForm()">
                             <h3 id="contact">( Contactez-moi )</h3>
 
-                            <input type="text" name="name" placeholder="Nom/Prénom:"><br>
-
-                            <input type="email" name="email" placeholder="E-mail:"><br>
-
-                            <input type="text" name="object" placeholder="Objet:"><br>
-
-                            <textarea type="text" resize name="message" placeholder="Message:"></textarea>
-
-                            <button type="submit">Envoyer </button>
+                            <td>
+                            <input type="text" name="name" class="long" placeholder="Nom/Prénom:"><br>
+                            <span class="error" id="errorname"></span>
+                            </td>
+                            <td>
+                            <input type="email" name="email" class="long" placeholder="E-mail:"><br>
+                            <span class="error" id="erroremail"></span>
+                            </td>
+                            <td>
+                            <input type="text" name="object" class="long" placeholder="Objet:"><br>
+                            <span class="error" id="errorobj"></span>
+                        </td>
+                            <td>
+                            <textarea type="text" resize name="message"  class="long" placeholder="Message:"></textarea>
+                            <span class="error" id="errormsg"></span>
+                        </td>
+                           <button type="submit" value="Envoyer">Envoyer </button>
                         </form>
                     </div>
                 </div>
@@ -242,6 +251,9 @@
             <p>&copy 2020 - Pauline Frare-Pradal</p>
         </footer>
     </div>
+  
+
+         
 </body>
 
 </html>
