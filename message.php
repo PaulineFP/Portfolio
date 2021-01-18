@@ -12,7 +12,7 @@
 <body>
     <div class="message">
         <div class="messageB">
-            <p>Message à bien été envoyé! Vous allez être redirigé vers mon Portfolio</p>
+            <p>Message a bien été envoyé! Vous allez être redirigé vers mon Portfolio</p>
         </div>
      
     </div>
