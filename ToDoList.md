@@ -22,8 +22,7 @@ Globale:
   ok  - Animation compétances
   ok  - Animation projets
   ok  - trouver une animation pour le scroll
-      - crée un menu burgeur
-      - création fenaitre porjets
+  ok  - création fenaitre porjets
 ------------------------PHP----------------------------
 
   ok  - lier le fromulaire a la boite mail

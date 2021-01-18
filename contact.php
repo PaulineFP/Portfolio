@@ -1,5 +1,7 @@
 <?php
 
+require "message.php";
+
 //vérification des données:
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_add = strip_tags(htmlspecialchars($_POST['email']));
@@ -17,5 +19,5 @@ $headers = "From: noreply-p.frare@codeur.online\n";
 $headers = "Répondre à : $email_add";
 mail($to,$email_subject,$email_body,$headers);
 return true;
-header('location: https://paulinef561.promo-47.codeur.online/message.php');
+
 ?>
