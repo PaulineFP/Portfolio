@@ -30,7 +30,16 @@
         }
     }
 }
-
 .footer{
     margin-top: 0;
+}
+
+@media screen and (max-width:412px) {
+
+    .message .messageB p{
+        font-size: 15px;
+    }
+}
+.message .messageB{
+    width: 70%;
 }
