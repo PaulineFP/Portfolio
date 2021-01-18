@@ -12,7 +12,7 @@
 @import 'about';
 @import 'form';
 @import 'footer';
-
+       
 //-------------------
 body {
     background: rgb(255, 255, 255);
@@ -28,9 +28,6 @@ body {
     color: $purple;
     font-size: 1.7rem;
     padding: 2em 4em;
-}
-.menu-btn{
-    display: none;
 }
 //-------
 
