@@ -1,40 +1,38 @@
-
-@mixin flex_center {
-    display: flex;
-    justify-content: center;
+.order-sm-1 {
+  order: 1 !important
 }
 
-@mixin box_shadow {
-    box-shadow:  -10px 5px 5px rgba(0, 0, 0, .5);
+.order-sm-2 {
+  order: 2 !important
 }
-
-@mixin p {
-    color: $white_eyes;
-    font-size:20px;
-    font-family: Calibri;
-}
-/*-----------------------*/
 
 .about {
-@include flex_center();
-position: relative;
-padding-bottom: 5em;
-.aboutC{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5em;
+.row{
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .col-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%
+    }
     img {
-        @include box_shadow();
-        width: 65vw;
-        border-radius: 2em;
-        margin-right: auto;
-        margin-left: auto;
+      max-width: 90%;
+      height: auto
     }
      p {
-        @include p();
-        position: absolute;
-        text-align: justify;
-        margin-top: 2em;
-        padding-right: 3em;
+       text-align: justify;
+       font-size:23px;
+       font-family: Calibri;
+       color: $dark_blue;
+       margin-top: 2em;
     }
 }
 }

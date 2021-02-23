@@ -21,6 +21,7 @@
     font-family: Calibri;
 }
 /*---------------------------*/
+
 .containerC {
 
     @include container();
@@ -99,7 +100,7 @@ padding: 2em;
 
 .formP { 
 @include p();
-background: url("../img/contact.jpg") no-repeat;
+background: center url("../img/contact.jpg") no-repeat;
 width: 50%;
 padding: 2em;   
 text-align: center;

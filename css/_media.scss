@@ -1,432 +1,465 @@
+@media screen and (max-width: 1100px) {
+  .containerC {
+    margin-top: 40%;
+  }
+  .formP {
+    width: 35%;
+
+    p {
+      font-size: 15px;
+    }
+
+    h4 {
+      font-size: 20px;
+      padding-bottom: 0;
+    }
+
+  }
+
+  .form {
+    width: 35%;
+  }
+}
+
 @media screen and (max-width: 780px) {
-    .topbar {
-        left: 15px;
+  .topbar {
+    left: 15px;
 
-        a {
-            font-size: 15px;
-        }
+    a {
+      font-size: 15px;
+    }
+  }
+
+  //--------------------
+  .banniere {
+    min-height: 50vh;
+
+    h1 {
+      font-size: 50px;
+      padding-bottom: 1%;
+      padding-left: 1rem;
     }
 
-    //--------------------
-    .banniere {
-        min-height: 50vh;
+    .nuages {
+      height: 50%;
+    }
+  }
 
-        h1 {
-            font-size: 50px;
-            padding-bottom: 1%;
-            padding-left: 1rem;
-        }
+  //--------------------
+  .container {
+    width: 90%;
 
-        .nuages {
-            height: 50%;
-        }
+    h2 {
+      font-size: 35px;
     }
 
-    //--------------------
-    .container {
-        width: 90%;
+    h3 {
+      font-size: 35px;
+    }
+  }
 
-        h2 {
-            font-size: 35px;
+  //-----------------
+
+  .competences {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+
+    .cardContainer {
+      display: block;
+      white-space: nowrap;
+      margin-left: 1rem;
+
+      //pour chrome/ firefox / opera et safari:
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card {
+        display: inline-block;
+        margin-right: 75px;
+        max-width: 140px;
+        max-height: 180px;
+        box-shadow: none;
+
+        img {
+          min-width: 0px;
+          max-width: 140px;
+          max-height: 180px;
+          box-shadow: -10px 5px 5px rgba(0, 0, 0, .5);
+          object-fit: cover;
         }
+      }
+    }
+  }
 
-        h3 {
-            font-size: 35px;
-        }
+  //----------------
+
+  .projets {
+    padding: 3em 5em 0 0;
+    width: 130px;
+    margin-left: 40%;
+  }
+
+  .boite {
+    width: 130px;
+
+    span {
+      width: 100%;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+
+      img {
+        width: 20vw;
+        height: 15vh;
+      }
+    }
+  }
+
+  //modal
+  .modalDialog {
+    width: 100%;
+    height: 100%;
+
+    .modal {
+      width: 85%;
+      height: 72%;
+
+      img {
+        width: 65%;
+        height: 30vh;
+      }
+
+      .close {
+        right: 2em;
+      }
+    }
+  }
+
+  //--------A Propos--------
+  .about {
+    padding-bottom: 1em;
+
+    .row {
+      display: block;
+
+      img {
+        max-width: 50%;
+        margin-left: 20%;
+      }
+
+      .col-6 {
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        color: $dark_blue;
+      }
     }
 
-    //-----------------
 
-    .competences {
-        display: block;
-        width: 100%;
-        overflow-x: scroll;
+  }
 
-        .cardContainer {
-            display: block;
-            white-space: nowrap;
-            margin-left: 1rem;
+  //-------HR-------
+  .style-six {
+    padding-bottom: 3em;
+  }
 
-            //pour chrome/ firefox / opera et safari:
-            &::-webkit-scrollbar {
-                display: none;
-            }
+  //---------Formulaire-----------
+  .phrase {
+    height: 50px;
+    font-size: 20px;
+    padding: 0 4em;
+    padding-bottom: 5em;
+  }
 
-            .card {
-                display: inline-block;
-                margin-right: 75px;
-                max-width: 140px;
-                max-height: 180px;
-                box-shadow: none;
+  .containerC {
+    width: 80%;
+    height: 70%;
 
-                img {
-                    min-width: 0px;
-                    max-width: 140px;
-                    max-height: 180px;
-                    box-shadow: -10px 5px 5px rgba(0, 0, 0, .5);
-                    object-fit: cover;
-                }
-            }
-        }
-    }
+    .formP {
+      width: 35%;
 
-    //----------------
+      p {
+        font-size: 15px;
+      }
 
-    .projets {
-        padding: 3em 5em 0 0;
-        width: 130px;
-        margin-left: 40%;
-    }
-
-    .boite {
-        width: 130px;
-
-        span {
-            width: 100%;
-            transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
-
-            img {
-                width: 20vw;
-                height: 15vh;
-            }
-        }
-    }
-
-    //modal
-    .modalDialog {
-        width: 100%;
-        height: 100%;
-
-        .modal {
-            width: 85%;
-            height: 72%;
-
-            img {
-                width: 65%;
-                height: 30vh;
-            }
-
-            .close {
-                right: 2em;
-            }
-        }
-    }
-
-    //--------A Propos--------
-    .about {
-        padding-bottom: 1em;
-
-        .aboutC {
-            p {
-                font-size: 12px;
-                padding-right: 7%;
-            }
-
-            img {
-                width: 90%;
-            }
-        }
-    }
-
-    //-------HR-------
-    .style-six {
-        padding-bottom: 3em;
-    }
-
-    //---------Formulaire-----------
-    .phrase {
-        height: 50px;
+      h4 {
         font-size: 20px;
-        padding: 0 4em;
-        padding-bottom: 5em;
+        padding-bottom: 0;
+      }
+
+      a img {
+        width: 30px !important;
+        padding-top: 1em;
+      }
     }
 
-    .containerC {
-        width: 80%;
-        height: 450px;
+    .form {
+      width: 35%;
 
-        .formP {
-            background: center/110% url("../img/contact.jpg") no-repeat;
-            width: 35%;
+      .error {
+        font-size: 15px;
+        font-family: calibri;
+      }
 
-            p {
-                font-size: 15px;
-            }
-
-            h4 {
-                font-size: 20px;
-                padding-bottom: 0;
-            }
-
-            a img {
-                width: 30px !important;
-                padding-top: 1em;
-            }
-        }
-
-        .form {
-            width: 35%;
-
-            .error {
-                font-size: 15px;
-                font-family: calibri;
-            }
-
-            button {
-                margin-left: 2em;
-            }
-        }
+      button {
+        margin-left: 0;
+        width: 5em;
+      }
     }
+  }
 }
 
 //-------------------------------------------------------------
-@media screen and (max-width:412px) {
-    :root {
-        --mobile-width: 100vw;
-        --mobile-height: 16vh;
-        --mobile-element-displayed: 3;
+@media screen and (max-width: 598px) {
+  :root {
+    --mobile-width: 100vw;
+    --mobile-height: 16vh;
+    --mobile-element-displayed: 3;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+
+  //----------
+  .banniere {
+    .nuages {
+      display: none;
     }
 
-    .topbar {
-        display: none;
-    } 
+    h1 {
+      font-size: 30px;
+    }
+  }
 
+  //---------------
+  .container {
+    h2 {
+      font-size: 25px;
+      padding: 2em 0;
+    }
 
-    //----------
-    .banniere {
-        .nuages {
-            display: none;
+    h3 {
+      font-size: 25px;
+    }
+  }
+
+  //--------------
+  .competences {
+    width: 90%;
+    margin-bottom: 2em;
+
+    .cardContainer {
+      margin-top: 0;
+
+      .card {
+        margin-right: -20px;
+        max-width: 100px;
+        max-height: 50px;
+
+        &:not(:first-child) {
+          margin-left: 0;
         }
 
-        h1 {
-            font-size: 30px;
-        }
-    }
-
-    //---------------
-    .container {
-        h2 {
-            font-size: 25px;
-            padding: 2em 0;
+        &:hover {
+          transform: none;
+          transition: none;
         }
 
-        h3 {
-            font-size: 25px;
+        &:hover ~ .card {
+          position: relative;
+          left: 0;
+          transition: none;
         }
-    }
 
-    //--------------
-    .competences {
-        width: 90%;
-        margin-bottom: 2em;
+        &:hover {
+          transform: none;
+          left: 0;
 
-        .cardContainer {
-            margin-top: 0;
+          &:not(:first-child) {
+            margin-left: 0;
+          }
 
-            .card {
-                margin-right: -20px;
-                max-width: 100px;
-                max-height: 50px;
-
-                &:not(:first-child) {
-                    margin-left: 0;
-                }
-
-                &:hover {
-                    transform: none;
-                    transition: none;
-                }
-
-                &:hover~.card {
-                    position: relative;
-                    left: 0;
-                    transition: none;
-                }
-
-                &:hover {
-                    transform: none;
-                    left: 0;
-
-                    &:not(:first-child) {
-                        margin-left: 0;
-                    }
-
-                }
-
-                img {
-                    max-width: 100px;
-                    max-height: 100px;
-                }
-            }
         }
+
+        img {
+          max-width: 100px;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+
+  //----------HR--------
+  .style-six {
+    display: none;
+  }
+
+  //---------Projets-----------
+
+  .projets {
+    display: none;
+  }
+
+  .mobileContenaire {
+    display: block;
+    margin-left: 0;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2em;
+  }
+
+  .mobile {
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw;
+      height: 20vh;
+      flex-shrink: 0;
+      white-space: nowrap;
+      color: ivory;
+      margin-left: 3em;
+      padding-right: 30vw;
     }
 
-    //----------HR--------
-    .style-six {
-        display: none;
+    img {
+      width: 150px;
+      height: 100%;
+    }
+  }
+
+  //----Modal----
+  .modalDialog .modal {
+    width: 80%;
+    height: 350px;
+
+    img {
+      width: 200px;
+      height: 130px;
     }
 
-    //---------Projets-----------
-
-    .projets {
-        display: none;
+    p {
+      font-size: 10px;
     }
 
-    .mobileContenaire {
-        display: block;
-        margin-left: 0;
-        overflow: hidden;
+    .git img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-left: 3em;
+    }
+
+    .close {
+      right: 7px;
+    }
+  }
+
+  //a venir:
+  .modalDialog .modalC {
+    height: 35%;
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+
+  //-----------A Propos--------
+  .about {
+    .aboutC {
+      p {
+        font-size: 9px;
+        padding-top: 1em;
         position: relative;
-        margin-bottom: 2em;
+
+      }
+
+      img {
+        display: none;
+      }
     }
+  }
 
-    .mobile {
-        list-style: none;
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
+  //-----------Formulaire-----------
+  .phrase {
+    margin-top: 2em;
+    padding-bottom: 0;
+  }
 
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10vw;
-            height: 20vh;
-            flex-shrink: 0;
-            white-space: nowrap;
-            color: ivory;
-            margin-left: 3em;
-            padding-right: 30vw;
-        }
+  .containerC {
+    height: 40%;
+    margin-top: 13em;
+    .formP {
+      width: 27%;
+      background: center/130% url(../img/contact.jpg) no-repeat;
 
-        img {
-            width: 150px;
-            height: 100%;
-        }
-    }
+      p {
+        font-size: 10px;
+      }
 
-    //----Modal----
-    .modalDialog .modal {
-        width: 80%;
-        height: 350px;
-
-        img {
-            width: 200px;
-            height: 130px;
-        }
-
-        p {
-            font-size: 10px;
-        }
-
-        .git img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            margin-left: 3em;
-        }
-
-        .close {
-            right: 7px;
-        }
-    }
-
-    //a venir:
-    .modalDialog .modalC {
-        height: 35%;
-
-        p {
-            font-size: 10px;
-        }
-    }
-
-
-    //-----------A Propos--------
-    .about {
-        background: no-repeat center/100% url(../img/Bmobile.jpg);
-        height: 330px;
-        border-radius: 10px;
-        justify-content: center;
-        padding-left: 15%;
-        margin-bottom: 2em;
-        box-shadow: -10px 5px 5px rgba(0, 0, 0, .5);
-
-        .aboutC {
-            p {
-                font-size: 9px;
-                padding-top: 1em;
-                position: relative;
-
-            }
-
-            img {
-                display: none;
-            }
-        }
-    }
-
-    //-----------Formulaire-----------
-    .phrase {
-        height: 50px;
+      h4 {
         font-size: 12px;
-        padding-bottom: 5em;
+      }
+
+      a img {
+        width: 25px !important;
+        padding-top: 0px;
+        margin-top: 7px;
+      }
     }
 
-    .containerC {
-        width: 100%;
-        height: 313px;
-
-        .formP {
-            width: 27%;
-            background: center/130% url(../img/contact.jpg) no-repeat;
-
-            p {
-                font-size: 10px;
-            }
-
-            h4 {
-                font-size: 12px;
-            }
-
-            a img {
-                width: 25px !important;
-                padding-top: 0px;
-                margin-top: 7px;
-            }
-        }
-
-        .form {
-            width: 50%;
-            padding: 10px;
+    .form {
+      width: 50%;
+      padding: 10px;
 
 
-            input {
-                font-size: 10px;
-                margin-bottom: 1em;
-            }
+      input {
+        font-size: 10px;
+        margin-bottom: 1em;
+      }
 
-            textarea {
-                font-size: 10px;
-                height: 70px;
-            }
+      textarea {
+        font-size: 10px;
+        height: 70px;
+      }
 
-            .error {
-                font-size: 10px;
-                font-family: calibri;
-            }
+      .error {
+        font-size: 10px;
+        font-family: calibri;
+      }
 
 
-            button {
-                font-size: 10px;
-                padding: 5px 0px;
-                margin-left: 3em;
-            }
-        }
-
-        .footer {
-            margin-top: 0;
-            height: 20px;
-            font-size: 7px;
-        }
+      button {
+        font-size: 10px;
+        padding: 5px 0px;
+        margin-left: 3em;
+      }
     }
+
+    .footer {
+      margin-top: 0;
+      height: 20px;
+      font-size: 7px;
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .containerC {
+    margin-top: 15em;
+    height: 45%;
+    .formP {
+      background: url(../img/contact.jpg) no-repeat;
+    }
+  }
+  .phrase {
+    font-size: 18px;
+  }
 }
