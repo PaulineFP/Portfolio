@@ -1,42 +1,154 @@
-.max {
-  width: 100%;
+@keyframes float {
+  to {
+    top: 0;
+  }
+  from {
+    top: 30px;
+  }
 }
-.competences {
+
+@keyframes floatShadow {
+  to {
+    width: 60%;
+  }
+  from {
+    width: 70%;
+  }
+}
+
+.card-content {
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 3em;
-}
-.cardContainer {
- margin-top: 5rem;
- display: flex;
+
+  .globo-logo {
+    width: 100px;
+    height: 160px;
+    margin: 2rem 1rem;
+
+
+    .circle-exterior {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      object-fit: cover;
+      //background-color: #2d3e50;
+      position: relative;
+      animation-name: float;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    .shadow {
+      width: 80%;
+      margin: 31px auto 0 auto;
+      height: 8px;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.17);
+      animation-name: floatShadow;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    div {
+      background-size: cover;
+      background-blend-mode: screen;
+    }
+
+    &:nth-child(1) .circle-exterior {
+      background: url("../img/symfony.jpg") no-repeat center;
+    }
+
+    &:nth-child(2) .circle-exterior {
+      background: url("../img/html5.jpg") no-repeat center;
+    }
+
+    &:nth-child(3) .circle-exterior {
+      background: url("../img/css3.jpg") no-repeat center;
+    }
+
+    &:nth-child(4) .circle-exterior {
+      background: url("../img/sass.jpg") no-repeat center;
+    }
+
+    &:nth-child(5) .circle-exterior {
+      background: url("../img/js.jpg") no-repeat center;
+    }
+
+    &:nth-child(6) .circle-exterior {
+      background: url("../img/php.jpg") no-repeat center;
+    }
+
+    &:nth-child(7) .circle-exterior {
+      background: url("../img/photoshop.jpg") no-repeat center;
+    }
+
+    &:nth-child(8) .circle-exterior {
+      background: url("../img/bootstrap.jpg") no-repeat center;
+    }
+
+    &:nth-child(9) .circle-exterior {
+      background: url("../img/mysql.jpg") no-repeat center;
+    }
+  }
 }
 
-.card {
-display: flex;
-justify-content: center;
-height: 280px;
-width: 200px;
-border-radius: 10px;
-box-shadow: -2rem 0 1rem rgba(0, 0, 0, 0.575);
-transition: 0.4s ease-out;
-position: relative;
-left: 0px;
+@media screen and (max-width: 736px) {
+  .card-content .globo-logo {
+    width: 80px;
+    height: 70px;
 
-&:not(:first-child) {
-  margin-left: -80px;
+    .circle-exterior {
+      width: 90px;
+      height: 80px;
+    }
+  }
 }
-&:hover {
-transform: translateY(-20px);
-transition: 0.4s ease-out;
-}
-&:hover ~ .card {
-position: relative;
-left: 80px;
-transition: 0.4s ease-out;
-}
- img {
-  min-width: 200px;
-  border-radius: 10px;
- }
 
-}
+//.max {
+//  width: 100%;
+//}
+//.competences {
+//  display: flex;
+//  justify-content: center;
+//  padding-bottom: 3em;
+//}
+//.cardContainer {
+// margin-top: 5rem;
+// display: flex;
+//}
+//
+//.card {
+//display: flex;
+//justify-content: center;
+//height: 280px;
+//width: 200px;
+//border-radius: 10px;
+//box-shadow: -2rem 0 1rem rgba(0, 0, 0, 0.575);
+//transition: 0.4s ease-out;
+//position: relative;
+//left: 0px;
+//
+//&:not(:first-child) {
+//  margin-left: -80px;
+//}
+//&:hover {
+//transform: translateY(-20px);
+//transition: 0.4s ease-out;
+//}
+//&:hover ~ .card {
+//position: relative;
+//left: 80px;
+//transition: 0.4s ease-out;
+//}
+// img {
+//  min-width: 200px;
+//  border-radius: 10px;
+// }
+//
+//}
