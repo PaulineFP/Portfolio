@@ -65,6 +65,7 @@
         top: 0;
         left: 0;
         background-size: cover;
+        background-position: center;
         background-color: #373f51;
         background-blend-mode: screen;
         transform: skew(10deg) scale(1.2);
@@ -87,27 +88,27 @@
     }
 
     &:nth-child(1) .card:after {
-      background-image: url(https://images.pexels.com/photos/953219/pexels-photo-953219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-image: url(../img/Repare_Pc.PNG);
     }
 
     &:nth-child(2) .card:after {
-      background-image: url(https://images.pexels.com/photos/316891/pexels-photo-316891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-image: url(../img/fermevernois.PNG);
     }
 
     &:nth-child(3) .card:after {
-      background-image: url(https://images.pexels.com/photos/3303/water-drink-fresh-lemons.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-image: url(../img/wordpress.PNG);
     }
 
     &:nth-child(4) .card:after {
-      background-image: url(https://images.pexels.com/photos/635537/pexels-photo-635537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-image: url(../img/inca.PNG);
     }
 
     &:nth-child(5) .card:after {
-      background-image: url('https://images.pexels.com/photos/6478/tree-lemon-fruit.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url(../img/projets.png);
     }
 
     &:nth-child(6) .card:after {
-      background-image: url('https://images.pexels.com/photos/709816/pexels-photo-709816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url(../img/projets.png);
     }
   }
 }
