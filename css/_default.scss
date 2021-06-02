@@ -1,21 +1,30 @@
 .container {
-    margin: auto auto ;
-    width: 90%;
+  margin: auto auto;
+  width: 90%;
+}
+.project-container {
+  width: 80%;
+  margin: 0 auto;
+}
+h2,h3,h4 {
+  color: $dark_blue;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Petrichor Sublimey";
+  font-size: 50px;
+  padding: 2em 0;
+}
 
-    h2 {
-        display: flex;
-        justify-content: center;
-        color: $dark_blue;
-        text-align: center;
-        font-family: "Petrichor Sublimey";
-        font-size: 50px;
-        padding: 2em 0 ;
-    }
-    h3 { 
-        color: $dark_blue;
-        font-size: 50px;
-        text-align: center;
-        font-family: "Manila Kiss";
-        padding: 1em 0;
-    }
+h3 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Manila Kiss";
+  padding: 1em 0;
+}
+
+p {
+  font-family: "Calibri";
 }
