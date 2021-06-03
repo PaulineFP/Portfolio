@@ -193,62 +193,118 @@
             </div>
         </div>
 
-        <hr class="style-six">
+        <!--        <hr class="style-six">-->
 
-        <!-----------------Contact------------------>
-        <div>
-            <div class="max">
-                <p class="phrase">N'ésitez pas à me contacter pour toute information supplémentaire</p>
+        <!--        <div>-->
+        <!--            <div class="max">-->
+        <!--                <p class="phrase">N'ésitez pas à me contacter pour toute information supplémentaire</p>-->
 
-<!--                <div class="row">-->
-<!--                    <div class="containerC">-->
-<!--                        <div class="formP">-->
-<!--                            <p>Merci de me contacter via le formulaire pour toute demande.-->
-<!--                                Si besoin, vous pouvez me joindre directement par téléphone.-->
-<!--                            </p>-->
-<!--                            <h4>06 42 08 88 16</h4>-->
-<!--                            <h4>p.frare@codeur.online</h4>-->
-<!--                            <a href="https://www.linkedin.com/in/pauline-frare-pradal-a29a7a135/" target="_bank">-->
-<!--                                <img alt="linkedin" src="img/iconLinkedin.png"/>-->
-<!--                            </a>-->
-<!--                            <a href="https://github.com/PaulineFP" target="_bank">-->
-<!--                                <img alt="github" src="img/iconGithub.png"/>-->
-<!--                            </a>-->
-<!--                        </div>-->
+        <!--                <div class="row">-->
+        <!--                    <div class="containerC">-->
+        <!--                        <div class="formP">-->
+        <!--                            <p>Merci de me contacter via le formulaire pour toute demande.-->
+        <!--                                Si besoin, vous pouvez me joindre directement par téléphone.-->
+        <!--                            </p>-->
+        <!--                            <h4>06 42 08 88 16</h4>-->
+        <!--                            <h4>p.frare@codeur.online</h4>-->
+        <!--                            <a href="https://www.linkedin.com/in/pauline-frare-pradal-a29a7a135/" target="_bank">-->
+        <!--                                <img alt="linkedin" src="img/iconLinkedin.png"/>-->
+        <!--                            </a>-->
+        <!--                            <a href="https://github.com/PaulineFP" target="_bank">-->
+        <!--                                <img alt="github" src="img/iconGithub.png"/>-->
+        <!--                            </a>-->
+        <!--                        </div>-->
 
-<!--                        <div class="form">-->
-<!--                            <form name="myForm" action="contact.php" method="POST" onsubmit="return validateForm()">-->
-<!--                                <h3 id="contact">( Contactez-moi )</h3>-->
-<!--                                <td>-->
-<!--                                    <input type="text" name="name" class="long" placeholder="Nom/Prénom:"><br>-->
-<!--                                    <span class="error" id="errorname"></span>-->
-<!--                                </td>-->
-<!--                                <td>-->
-<!--                                    <input type="email" name="email" class="long" placeholder="E-mail:"><br>-->
-<!--                                    <span class="error" id="erroremail"></span>-->
-<!--                                </td>-->
-<!--                                <td>-->
-<!--                                    <input type="text" name="object" class="long" placeholder="Objet:"><br>-->
-<!--                                    <span class="error" id="errorobj"></span>-->
-<!--                                </td>-->
-<!--                                <td>-->
-<!--                                <textarea type="text" resize name="message" class="long"-->
-<!--                                          placeholder="Message:"></textarea>-->
-<!--                                    <span class="error" id="errormsg"></span>-->
-<!--                                </td>-->
-<!--                                <button type="submit" value="Envoyer">Envoyer</button>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
+        <!--                        <div class="form">-->
+        <!--                            <form name="myForm" action="contact.php" method="POST" onsubmit="return validateForm()">-->
+        <!--                                <h3 id="contact">( Contactez-moi )</h3>-->
+        <!--                                <td>-->
+        <!--                                    <input type="text" name="name" class="long" placeholder="Nom/Prénom:"><br>-->
+        <!--                                    <span class="error" id="errorname"></span>-->
+        <!--                                </td>-->
+        <!--                                <td>-->
+        <!--                                    <input type="email" name="email" class="long" placeholder="E-mail:"><br>-->
+        <!--                                    <span class="error" id="erroremail"></span>-->
+        <!--                                </td>-->
+        <!--                                <td>-->
+        <!--                                    <input type="text" name="object" class="long" placeholder="Objet:"><br>-->
+        <!--                                    <span class="error" id="errorobj"></span>-->
+        <!--                                </td>-->
+        <!--                                <td>-->
+        <!--                                <textarea type="text" resize name="message" class="long"-->
+        <!--                                          placeholder="Message:"></textarea>-->
+        <!--                                    <span class="error" id="errormsg"></span>-->
+        <!--                                </td>-->
+        <!--                                <button type="submit" value="Envoyer">Envoyer</button>-->
+        <!--                            </form>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+    </div>
+</div>
+
+<!-----------------Contact------------------>
+<div class="contact-section">
+    <p>N'ésitez pas à me contacter pour toute information supplémentaire</p>
+    <div class="contact-content">
+        <div class="contact-info">
+            <p>Merci de me contacter via le formulaire pour toute demande.
+                Si besoin, vous pouvez me joindre directement par téléphone.
+            </p>
+            <div class="social">
+                <div class="icon">
+                    <img src="img/icon-tel.png" alt="mobile icone">
+                    <p>06 42 08 88 16</p>
+                </div>
+
+                <div class="icon">
+                    <img src="img/arobase.png" alt="arobase">
+                    <p>pauline.frare-pradal@laposte.net</p>
                 </div>
             </div>
+
+
+            <a href="https://github.com/PaulineFP" target="_bank">
+                <img class="git" alt="github" src="img/iconGithub.png"/>
+            </a>
+        </div>
+        <div>
+            <h3>(Contactez-moi)</h3>
+            <form class="contact-form" name="myForm" action="contact.php" method="POST"
+                  onsubmit="return validateForm()">
+                <td>
+                    <span class="error" id="errorname"></span>
+                </td>
+
+                <td>
+                    <input type="email" name="email" class="contact-form-text" placeholder="E-mail:"><br>
+                    <span class="error" id="erroremail"></span>
+                </td>
+
+                <td>
+                    <input type="text" name="object" class="contact-form-text" placeholder="Objet:"><br>
+                    <span class="error" id="errorobj"></span>
+                </td>
+
+                <td>
+                    <textarea type="text" resize name="message" class="contact-form-text"
+                              placeholder="Message:"></textarea>
+                    <span class="error" id="errormsg"></span>
+                </td>
+
+                <button type="submit" value="Envoyer">Envoyer</button>
+
+            </form>
         </div>
     </div>
 
-    <!-----------------Footer----------------------------------------------->
-    <footer class="footer">
-        <p>&copy 2020 - Pauline Frare-Pradal</p>
-    </footer>
+
+</div>
+<!-----------------Footer----------------------------------------------->
+<footer class="footer home">
+    <p>&copy 2020 - Pauline Frare-Pradal</p>
+</footer>
 </div>
 
 
