@@ -10,11 +10,13 @@
   width: 80%;
   margin: auto;
   padding-bottom: 5em;
-.row{
+
+  .row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    align-items: center;
     margin-right: -15px;
     margin-left: -15px;
 
@@ -23,16 +25,34 @@
       flex: 0 0 50%;
       max-width: 50%
     }
+
     img {
-      max-width: 90%;
+      max-width: 95%;
       height: auto
     }
-     p {
-       text-align: justify;
-       font-size:23px;
-       font-family: Calibri;
-       color: $dark_blue;
-       margin-top: 2em;
+
+    p {
+      margin-bottom: 1em;
     }
+  }
 }
+
+@media screen and (max-width: 1016px) {
+  .about {
+    padding-bottom: 1em;
+    .row {
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 300px;
+      }
+
+      .col-6 {
+        max-width: 100%;
+      }
+    }
+  }
 }

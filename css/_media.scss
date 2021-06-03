@@ -135,79 +135,56 @@
     }
   }
 
-  //--------A Propos--------
-  .about {
-    padding-bottom: 1em;
+//-------HR-------
+.style-six {
+  padding-bottom: 3em;
+}
 
-    .row {
-      display: block;
+//---------Formulaire-----------
+.phrase {
+  height: 50px;
+  font-size: 20px;
+  padding: 0 4em;
+  padding-bottom: 5em;
+}
 
-      img {
-        max-width: 50%;
-        margin-left: 20%;
-      }
+.containerC {
+  width: 80%;
+  height: 70%;
 
-      .col-6 {
-        max-width: 100%;
-      }
-      p {
-        font-size: 18px;
-        color: $dark_blue;
-      }
+  .formP {
+    width: 35%;
+
+    p {
+      font-size: 15px;
     }
 
-
-  }
-
-  //-------HR-------
-  .style-six {
-    padding-bottom: 3em;
-  }
-
-  //---------Formulaire-----------
-  .phrase {
-    height: 50px;
-    font-size: 20px;
-    padding: 0 4em;
-    padding-bottom: 5em;
-  }
-
-  .containerC {
-    width: 80%;
-    height: 70%;
-
-    .formP {
-      width: 35%;
-
-      p {
-        font-size: 15px;
-      }
-
-      h4 {
-        font-size: 20px;
-        padding-bottom: 0;
-      }
-
-      a img {
-        width: 30px !important;
-        padding-top: 1em;
-      }
+    h4 {
+      font-size: 20px;
+      padding-bottom: 0;
     }
 
-    .form {
-      width: 35%;
-
-      .error {
-        font-size: 15px;
-        font-family: calibri;
-      }
-
-      button {
-        margin-left: 0;
-        width: 5em;
-      }
+    a img {
+      width: 30px !important;
+      padding-top: 1em;
     }
   }
+
+  .form {
+    width: 35%;
+
+    .error {
+      font-size: 15px;
+      font-family: calibri;
+    }
+
+    button {
+      margin-left: 0;
+      width: 5em;
+    }
+  }
+}
+
 }
 
 //-------------------------------------------------------------
@@ -397,6 +374,7 @@
   .containerC {
     height: 40%;
     margin-top: 13em;
+
     .formP {
       width: 27%;
       background: center/130% url(../img/contact.jpg) no-repeat;
@@ -451,10 +429,12 @@
     }
   }
 }
+
 @media screen and (max-width: 468px) {
   .containerC {
     margin-top: 15em;
     height: 45%;
+
     .formP {
       background: url(../img/contact.jpg) no-repeat;
     }
