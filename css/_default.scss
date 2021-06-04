@@ -5,17 +5,26 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(247, 255, 255, 1) 100%);
+  overflow-x: hidden;
+}
+
 .container {
   margin: auto auto;
   width: 90%;
 }
+
 .project-container {
   width: 80%;
   margin: 2rem auto;
 }
-h2,h3,h4 {
+
+h2, h3, h4 {
   color: $dark_blue;
 }
+
 h2 {
   display: flex;
   justify-content: center;
@@ -37,4 +46,40 @@ p {
   text-align: justify;
   font-size: 19px;
   color: #1a2c5b;
+}
+
+@media screen and (max-width: 780px) {
+
+  //--------------------
+  .container {
+    width: 90%;
+
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 598px) {
+  :root {
+    --mobile-width: 100vw;
+    --mobile-height: 16vh;
+    --mobile-element-displayed: 3;
+  }
+
+  //---------------
+  .container {
+    h2 {
+      font-size: 25px;
+      padding: 1em 0;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
 }

@@ -150,3 +150,18 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  form.contact-form .error {
+    .error {
+      font-size: 15px;
+      font-family: calibri;
+    }
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .error {
+    font-size: 10px;
+    font-family: calibri;
+  }
+}

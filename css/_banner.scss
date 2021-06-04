@@ -1,52 +1,75 @@
 .banniere {
-    max-width: 100vw;
-    min-height: 100vh;
-    background: no-repeat center/100% url("../img/PortfolioPauline.png");
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        position: relative;
-        color: $white_eyes;
-        font-size: 80px;
-        font-family: "Manila Kiss";
-        padding-bottom: 20%;
+  max-width: 100vw;
+  min-height: 100vh;
+  background: no-repeat center/100% url("../img/PortfolioPauline.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    position: relative;
+    color: $white_eyes;
+    font-size: 80px;
+    font-family: "Manila Kiss";
+    padding-bottom: 20%;
+  }
+
+  .nuages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      max-width: 100%;
+      animation: could calc(3s * var(--i)) linear infinite;
     }
-    .nuages {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        pointer-events: none;
-        img {
-            position: absolute;
-            bottom: 0;
-            max-width: 100%;
-            animation: could calc(3s * var(--i))linear infinite;
-        }
-    }
+  }
 }
 
 @keyframes could {
-    0% {
-        opacity: 0;
-        transform: scale(1);
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .banniere h1 {
+    font-size: 50px;
+    padding-bottom: 1%;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .banniere {
+    .nuages {
+      display: none;
     }
 
-    25% {
-        opacity: 1;
+    h1 {
+      font-size: 30px;
     }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(3);
-    }
+  }
 }

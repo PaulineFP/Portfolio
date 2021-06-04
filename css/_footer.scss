@@ -18,4 +18,13 @@
 .home {
     margin-top: 0;
 }
+
+@media screen and (max-width: 598px) {
+    .footer {
+        margin-top: 0;
+        height: 20px;
+        font-size: 7px;
+    }
+}
+
  

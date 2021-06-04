@@ -1,33 +1,14 @@
 @import 'colors';
 @import 'font';
-@import 'topbar';
 @import 'banner';
 @import 'default';
 @import 'skills';
 @import 'hr';
 @import "project";
 @import 'cardProject';
-@import 'modal';
 @import 'about';
 @import 'form';
 @import 'footer';
-//-------------------
 
-body {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(247, 255, 255, 1) 100%);
-    overflow-x: hidden;
-}
 
-//Contact
 
-.phrase {
-    text-align: center;
-    font-family: Calibri;
-    color: $purple;
-    font-size: 1.7rem;
-    padding: 2em 4em;
-}
-//-------
-
-@import 'media'; 
