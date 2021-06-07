@@ -14,10 +14,6 @@
         <div class="messageB">
             <p>Message a bien été envoyé! Vous allez être redirigé vers mon Portfolio</p>
         </div>
-     
     </div>
-   <footer class="footer">
-        <p>&copy 2020 - Pauline Frare-Pradal</p>
-    </footer>
 </body>
 <html>

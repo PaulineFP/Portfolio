@@ -191,7 +191,8 @@
     <p>N'hésitez pas à me contacter pour toute information supplémentaire</p>
     <div class="contact-content">
         <div class="contact-info">
-            <p>Merci de me contacter via le formulaire pour toute demande.
+            <p>Merci de me contacter par mail via le formulaire pour toute demande.
+<!--                (Le formulaire n'est pas encore fonctionnel pour le moment).-->
                 Si besoin, vous pouvez me joindre directement par téléphone.
             </p>
             <div class="social">
@@ -216,6 +217,7 @@
             <form class="contact-form" name="myForm" action="contact.php" method="POST"
                   onsubmit="return validateForm()">
                 <td>
+                    <input type="text" name="name" class="contact-form-text" placeholder="Nom/Prénom:"><br>
                     <span class="error" id="errorname"></span>
                 </td>
 
