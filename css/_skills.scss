@@ -21,6 +21,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 
   .globo-logo {
     width: 100px;
@@ -61,39 +63,45 @@
     }
 
     &:nth-child(1) .circle-exterior {
-      background: url("../img/symfony.jpg") no-repeat center;
+      background: url("../img/symfony.webp") no-repeat center;
     }
 
     &:nth-child(2) .circle-exterior {
-      background: url("../img/html5.jpg") no-repeat center;
+      background: url("../img/html5.webp") no-repeat center;
     }
 
     &:nth-child(3) .circle-exterior {
-      background: url("../img/css3.jpg") no-repeat center;
+      background: url("../img/css3.webp") no-repeat center;
     }
 
     &:nth-child(4) .circle-exterior {
-      background: url("../img/sass.jpg") no-repeat center;
+      background: url("../img/sass.webp") no-repeat center;
     }
 
     &:nth-child(5) .circle-exterior {
-      background: url("../img/js.jpg") no-repeat center;
+      background: url("../img/js.webp") no-repeat center;
     }
 
     &:nth-child(6) .circle-exterior {
-      background: url("../img/php.jpg") no-repeat center;
+      background: url("../img/php.webp") no-repeat center;
     }
 
     &:nth-child(7) .circle-exterior {
-      background: url("../img/photoshop.jpg") no-repeat center;
+      background: url("../img/photoshop.webp") no-repeat center;
     }
 
     &:nth-child(8) .circle-exterior {
-      background: url("../img/bootstrap.jpg") no-repeat center;
+      background: url("../img/bootstrap.webp") no-repeat center;
+    }
+    &:nth-child(9) .circle-exterior {
+      background: url("../img/tailwind.webp") no-repeat center;
     }
 
-    &:nth-child(9) .circle-exterior {
-      background: url("../img/mysql.jpg") no-repeat center;
+    &:nth-child(10) .circle-exterior {
+      background: url("../img/mysql.webp") no-repeat center;
+    }
+    &:nth-child(11) .circle-exterior {
+      background: url("../img/prestashop-transpa.webp") no-repeat center;
     }
   }
 }
