@@ -1,6 +1,5 @@
 <?php
 
-require "message.php";
 
 //vérification des données:
 $name = strip_tags(htmlspecialchars($_POST['name']));
@@ -15,11 +14,24 @@ Elle utilise le même moteur de recherche que fgetss().
 
 //Envoi d'e-mail et réception des informations:
 $to = 'pauline.frare-pradal@laposte.net';
-$email_subject = "Contact: $name";
-$email_body = "Vous avez reçu un nouveau message depuis le formulaire de contact de votre portfolio.\n\n"."Voici les détails:\n\nName: $name\n\nEmail:$email_add\n\nObjet:$object\n\nMessage:$message";
-$headers = "From: noreply-pauline.frare-pradal@laposte.net\n";
-$headers = "Répondre à : $email_add";
-mail($to,$email_subject,$email_body,$headers);
+
+
+$email_subject = "Object: $object";
+$email_body = "Vous avez reçu un nouveau message depuis le formulaire de contact de votre portfolio.\n\n"."Voici les détails:\n\nName: $name\n\nEmail: $email_add\n\nMessage: $message";
+$headers = "From: noreply-pauline.frare-pradal@laposte.net";
+$headers = "Reply-To: $email_add";
+
+
+if($message !=''){
+    $res = mail($to,$email_subject,$email_body,$headers);
+    if ($res == true){
+        require "message.php";
+    } else {
+        die("Un problème est survenu, veuillez recommencer");
+    }    
+}
+
+
 return true;
 
 ?>
